@@ -1,0 +1,11 @@
+<div class="plan">
+    <p>{{plans()?.type}}</p>
+    <p>{{plans()?.worth | currency : 'USD' }}</p>
+    <p>{{plans()?.plandetail}}</p>
+    <ul>
+    @for(plan of plans()?.planContent; track plan.length){
+      <li>{{plan}}</li>
+    }
+    </ul>
+    <a [href]="plans()?.plan_link">{{plans()?.plan_linkcontent}}</a>
+  </div>

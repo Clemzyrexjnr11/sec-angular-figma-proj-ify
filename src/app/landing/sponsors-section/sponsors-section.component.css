@@ -1,0 +1,48 @@
+.sponsors{
+    height: 538px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    padding: 140px 220px;
+
+}
+.sponsors_wrapper{
+    width: 80%;
+    /* height: 100%; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+}
+.sponsors_wrapper h1{
+    height: 87px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid lightblue; */
+    font-family: inter;
+    font-weight: bold;
+    font-size: 50px;
+    background: url('/images/projectElement.png');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: bottom;
+}
+
+.sponsors_wrapper ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    height: 71px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.sponsors_wrapper ul img{
+    height: 100%;
+    width: 50%;
+}

@@ -1,0 +1,57 @@
+<section class="choose_plan">
+    <div class="plan_wrapper">
+      <div class="plan_header">
+        <h1>Choose your plan</h1>
+        <p>Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
+      </div>
+      <div class="plan_grid">
+        <!-- <div class="plan">
+          <p>Free</p>
+          <p>$0</p>
+          <p>Capture ideas and find them quickly</p>
+          <ul>
+          <li>Sync unlimited devices </li>
+           <li>10 GB monthly uploads</li>
+           <li>200 MB max. note size</li>
+           <li>Customize Home dashboard and access extra widgets</li>
+           <li>Connect primary Google Calendar account</li>
+           <li>Add due dates, reminders, and notifications to your tasks</li>
+          </ul>
+          <a href="#">Get Started</a>
+        </div>
+        <div class="plan">
+          <p>Personal</p>
+          <p>$11.99</p>
+          <p>Keep home and family on track</p>
+          <ul>
+          <li>Sync unlimited devices </li>
+           <li>10 GB monthly uploads</li>
+           <li>200 MB max. note size</li>
+           <li>Customize Home dashboard and access extra widgets</li>
+           <li>Connect primary Google Calendar account</li>
+           <li>Add due dates, reminders, and notifications to your tasks</li>
+          </ul>
+          <a href="#">Get Started</a>
+        </div>
+        <div class="plan">
+          <p>Organisation</p>
+          <p>$49.99</p>
+          <p>Capture ideas and find them quickly</p>
+          <ul>
+          <li>Sync unlimited devices </li>
+           <li>10 GB monthly uploads</li>
+           <li>200 MB max. note size</li>
+           <li>Customize Home dashboard and access extra widgets</li>
+           <li>Connect primary Google Calendar account</li>
+           <li>Add due dates, reminders, and notifications to your tasks</li>
+          </ul>
+          <a href="#">Get Started</a>
+        </div> -->
+   @for( plan of plans; track plan.planId){
+    <app-plan-card [plans]="plan"/>
+  
+   }
+
+      </div>
+    </div>
+  </section>

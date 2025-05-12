@@ -1,0 +1,118 @@
+
+.project_section{
+    height: 1588px;
+    width: 100vw;
+    background-image: url('/images/pm-bg.png');
+    background-repeat: no-repeat;
+    background-position-y: 125px;
+    background-position-x: -382px;
+    background-size:603px, 449px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   .project_section .top{
+      height: 547px;
+      margin-top: 140px;
+      margin-left:  220px;
+      margin-bottom: 100px;
+      margin-right: 220px;
+      /* border: 2px solid black; */
+      width: 85vw;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+  }
+  
+  .project_article{
+      height: 411px;
+      /* border: 2px solid black; */
+      width: 45%;
+  }
+  .project_article h2{
+      font-family: inter;
+      font-weight: bold;
+      font-size: 72px;
+      margin-bottom: 24px;
+      background-image: url('/images/projectElement.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+  }
+  .project_article p{
+      font-weight: 200;
+      font-family: inter;
+      margin-bottom: 60px;
+  }
+  .project_article a{
+      padding: 20px 40px;
+      background: var(--bg-sec-primary);
+      width: fit-content;
+      border-radius: 6px;
+      color: white;
+      font-family: inter;
+      text-decoration: none;
+  }
+  .project_article a::after{
+      content: url('/images/right-arrow.png');
+      margin-left: 5px;
+  }
+  .project_img{
+      height: 100%;
+      /* border: 2px solid red; */
+      width: 55%;
+      background: var(--sec-sub-color);
+  }
+   .project_section .bottom{
+      height: 661px;
+      width: 85vw;
+      /* border: 2px solid red; */
+      display: flex;
+      align-items: center;
+      gap: 100px;
+  }
+  .project_section .bottom .left{
+      height: 100%;
+      width: 55%;
+      /* border: 2px solid black; */
+  }
+   .project_section .bottom .left img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+  }
+   .project_section .bottom .right{
+      height: 294px;
+      width: 45%;
+      /* border: 2px solid black; */
+  
+  }
+  .project_section .bottom .right h2{
+      font-size: 50px;
+      font-weight: bold;
+      font-family: inter;
+      background-image: url('/images/projectElement.png');
+      background-repeat: no-repeat;
+      background-position-x:120px;
+      background-position-y: 10px;
+      background-size: contain;
+      margin-bottom: 24px;
+  }
+  .project_section .bottom .right p{
+      font-weight: 200;
+      font-size: 18px;
+      font-family: inter;
+      margin-bottom: 60px;
+  }
+  .project_section .bottom .right a{
+      background: var(--bg-sec-primary);
+      width: fit-content;
+      padding: 20px 40px;
+      border-radius: 6px;
+      font-family: inter;
+      color: white;
+      text-decoration: none;
+  }
+  .project_section .bottom .right a::after{
+      content: url('/images/right-arrow.png');
+      margin-left: 5px;
+  }

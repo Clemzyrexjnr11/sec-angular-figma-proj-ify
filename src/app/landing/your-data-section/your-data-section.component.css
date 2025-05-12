@@ -1,0 +1,60 @@
+
+.your_data{
+    height: 661px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.your_data_wrapper{
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+}
+.your_data_wrapper .left{
+   height: 324px;
+   width: 60%;
+   /* border: 2px solid black; */
+   display: flex;
+   flex-direction: column;
+   font-family: inter;
+}
+.your_data_wrapper .left h1{
+    font-weight: bold;
+    font-size: 50px;
+    background-image: url('/images/projectElement.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.your_data_wrapper .left p{
+    font-weight: 250;
+    font-size: 14px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    line-height: 25px;
+}
+.your_data_wrapper .left a{
+    padding: 20px 40px;
+    width: fit-content;
+    background: var(--bg-sec-primary);
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+.your_data_wrapper .left a::after{
+    content: url('/images/right-arrow.png');
+    margin-left: 5px;
+}
+.your_data_wrapper .right{
+    height: 381px;
+    width: 40%;
+    /* border: 2px solid black; */
+}
+.your_data_wrapper .right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

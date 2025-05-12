@@ -1,0 +1,53 @@
+.plan{
+    height: fit-content;
+    /* border: 2px solid lightblue; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 22px ;
+    gap: 25px;
+    font-family: inter;
+    border: 1px solid var(--sec-color);
+    border-radius: 5px;
+}
+.plan:hover{
+    background: var(--bg-primary);
+    border: none;
+    color: white;
+    height: 80%;
+    transition: 0.5s all ease-in-out;
+}
+
+.plan p:nth-child(1){
+    font-weight: bold;
+    font-size: 28px;
+}
+.plan p:nth-child(2){
+    font-weight: bold;
+    font-size: 28px;
+}
+.plan ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    font-size: 14px;
+    font-weight: 250;
+}
+.plan ul li{
+    display: flex;
+    text-align: start;
+}
+.plan ul li::before{
+    content: url('/images/circle-nike-dark.png');
+    margin-right: 15px;
+    
+}
+
+.plan a{
+    padding: 16px 40px;
+    width: fit-content;
+    border: 1px solid var(--sec-color);
+    border-radius: 6px;
+    color: black;
+    text-decoration: none;
+}

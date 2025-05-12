@@ -1,0 +1,94 @@
+footer{
+    height: 705px;
+    width: 100%;
+    background: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid white; */
+    font-family: inter;
+}
+.link_container{
+   height: 500px;
+   width: 90%;
+   /* border: 1px solid white; */
+   color: white;
+   margin: 140px 220px 32px 220px;
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+}
+footer .link_container .top_link_holder{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* border: 1px solid white; */
+    gap: 30px;
+}
+
+footer .link_container .top_link_holder ul{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+footer .link_container .top_link_holder ul li, p{
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 20px;
+}
+footer .top_link_holder ul span{
+    font-weight: bold;
+}
+footer .top_link_holder ul:last-child p{
+    margin-bottom: 30px;
+}
+footer .top_link_holder a{
+    padding: 15px 40px;
+    width: fit-content;
+    background: var(--bg-sec-primary);
+    border-radius: 6px;
+    font-family: inter;
+    color: white;
+    text-decoration: none;
+}
+footer .top_link_holder a::after{
+    content: url('/images/right-arrow.png');
+    margin-left: 5px;
+}
+footer .top_link_holder .company{
+    font-size: 20px;
+}
+/* footer .top_link_holder .company::before{
+    content: url('/images/Logo Icon.png');
+    
+} */
+footer .link_container .bottom_link_holder{
+    display: flex;
+    height: 30%;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* border: 1px solid white; */
+
+}
+footer .link_container .bottom_link_holder ul:nth-child(1){
+    list-style: none;
+    display: flex;
+    font-weight: 200;
+    font-size: 14px;
+    gap: 60px;
+    position: relative;
+}
+footer .link_container .bottom_link_holder ul:nth-child(2){
+    display: flex;
+     gap: 32px;
+}
+.link_container .bottom_link_holder ul:nth-child(1) li:first-child::after{
+    content: url('/images/Down Arrow.png');
+    position: absolute;
+    top: 0;
+}
+ .link_container .bottom_link_holder ul:nth-child(1) li:first-child::before{
+    content: url('/images/light-globe.png');
+    margin-right: 5px;
+ }

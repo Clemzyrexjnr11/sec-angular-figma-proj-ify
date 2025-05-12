@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: fit-content;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+:root{
+    --bg-primary:#043873;
+    --bg-sec-primary:#4F9CF9;
+
+    --sec-color:#FFE492;
+    --sec-sub-color:#A7CEFC;
+    --light-color:#FFFFFF;
+    --dark-color:#212529;
+
+    --primary-font:Inter;
+
+}

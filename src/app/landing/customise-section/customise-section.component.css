@@ -1,0 +1,58 @@
+
+.customise_needs{
+    height: 812px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid green; */
+}
+.customise_wrapper{
+   height: 100%;
+   width: 80%;
+   display: flex;
+   align-items: center;
+   /* border: 2px solid black; */
+   gap: 5%;
+}
+.customise_needs .bg_customise{
+    height: 532px;
+    width: 50%;
+    /* border: 2px solid black; */
+    background: var(--sec-sub-color);
+
+}
+.customise_article{
+    width: 45%;
+    height: 411px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    font-family: inter;
+}
+.customise_article h1{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 24px;
+    background-image: url('/images/projectElement.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+.customise_article p{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.customise_article a{
+    padding: 20px 40px;
+    background: var(--bg-sec-primary);
+    border-radius: 6px;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+
+}
+.customise_article a::after{
+    content: url('/images/right-arrow.png');
+    margin-left: 5px;
+}

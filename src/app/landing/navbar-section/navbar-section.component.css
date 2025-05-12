@@ -1,0 +1,70 @@
+nav{
+    height: 92px;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid white; */
+    background: var(--bg-primary);
+    align-items: center;
+    justify-content: space-around;
+}
+.company_name{
+      display: flex;
+      align-items: center;
+}
+.company_name span{
+    color: white;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 28px;
+}
+nav .nav_btn{
+    display: flex;
+    gap: 24px;
+}
+.nav_btn li , a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: inter;
+}
+.nav_btn li:nth-child(1) a{
+    padding: 16px 40px;
+    background: var(--sec-color);
+    border-radius: 8px;
+    color: var(--bg-primary);
+}
+.nav_btn li:nth-child(2) a{
+    padding: 16px 24px;
+    background: var(--bg-sec-primary);
+    border-radius: 8px;
+}
+
+.nav_btn li:nth-child(2) a::after{
+    content: url('/images/right-arrow.png');
+    margin-left: 5px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 42px;
+    position: relative;
+
+}
+nav ul li::after{
+    content: url('/images/Down Arrow.png');
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+}
+nav ul a{
+    color: var(--light-color);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    
+   
+}
+.company_name img{
+    height: 29px;
+    width: 37px;
+}
