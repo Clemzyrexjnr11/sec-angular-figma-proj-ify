@@ -1,5 +1,6 @@
 .your_work{
     height: 574px;
+    width: 100vw;
     padding: 140px 220px;
     background: var(--bg-primary);
     background-image: url('/images/your-work-bg-pattern.png');
@@ -9,7 +10,7 @@
     
 }
 .your_work_article{
-    height: 294px;
+    height: fit-content;
     /* border: 2px solid lightblue; */
     display: flex;
     flex-direction: column;
@@ -45,4 +46,54 @@
 .your_work_article a::after{
     content: url('/images/right-arrow.png');
     margin-left: 5px;
+}
+@media(max-width:1130px){
+   .your_work{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+   }
+   .your_work_article{
+    width: 60%;
+    padding: 0px 40px;
+    align-items: start;
+   }
+   .your_work_article h1{
+    background-position: 20px 100px;
+   }
+   .your_work_article p{
+    line-height: 30px;
+    font-size: 20px;
+   }
+}
+@media(max-width:870px){
+    .your_work_article p{
+        font-size: 15px;
+    }
+    .your_work_article h1{
+        font-size: 35px;
+        background-position: 10px 70px;
+        background-size: 150px;
+    }
+}
+@media(max-width:670px){
+    .your_work{
+        justify-content: center;
+    }
+    .your_work_article{
+        width: 80%;
+        align-items: center;
+    }
+}
+@media(max-width:380px){
+    .your_work_article p{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .your_work_article h1{
+        font-size: 25px;
+    }
+    .your_work_article a{
+        padding: 10px;
+    }
 }
