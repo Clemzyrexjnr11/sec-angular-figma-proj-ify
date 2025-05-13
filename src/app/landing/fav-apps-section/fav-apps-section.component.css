@@ -12,14 +12,12 @@
 }
 .favorite_apps_wrapper{
     width: 85vw;
-     /* border: 1px solid white; */
      display: flex;
      gap: 50px;
 }
 .favorite_apps_wrapper .left{
     height: 470px;
     width: 45%;
-    /* border: 1px solid red; */
 }
 .favorite_apps_wrapper .left img{
     height: 100%;
@@ -29,7 +27,6 @@
 .favorite_apps_wrapper .right{
     height: 470px;
     width: 55%;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     color: white;
@@ -66,7 +63,6 @@
     }
     .favorite_apps_wrapper{
         width: 90%;
-        /* border: 2px solid white; */
     }
 }
 @media(max-width:1000px){
@@ -82,16 +78,13 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        /* border: 2px solid red; */
         height: fit-content;
     }
     .favorite_apps_wrapper .right{
         width: 100%;
         display: flex;
-        /* justify-content: center; */
         align-items: center;
         text-align: center;
-        /* border: 2px solid red; */
     }
     .favorite_apps_wrapper .right h2{
         font-size: 35px;

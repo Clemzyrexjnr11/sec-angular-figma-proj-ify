@@ -39,3 +39,27 @@
      color: white;
      border-radius: 8px;
 }
+@media(max-width:1360px){
+    .testimonials{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials_wrapper{
+        width: 95vw;
+        padding-bottom: 0px 30px;
+
+        /* border: 2px solid red; */
+    }
+
+}
+@media(max-width:950px){
+    .testimonials{
+        overflow-x: auto;
+        width: fit-content;
+    }
+    ::ng-deep app-testimonial-card{
+        width: 350px;
+    }
+}

@@ -4,7 +4,6 @@ footer{
     background: var(--bg-primary);
     display: flex;
     justify-content: center;
-    /* border: 1px solid white; */
     font-family: inter;
 }
 .link_container{
@@ -22,7 +21,6 @@ footer .link_container .top_link_holder{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* border: 1px solid white; */
     gap: 30px;
 }
 
@@ -59,16 +57,12 @@ footer .top_link_holder a::after{
 footer .top_link_holder .company{
     font-size: 20px;
 }
-/* footer .top_link_holder .company::before{
-    content: url('/images/Logo Icon.png');
-    
-} */
+
 footer .link_container .bottom_link_holder{
     display: flex;
     height: 30%;
     justify-content: space-between;
     align-items: flex-end;
-    /* border: 1px solid white; */
 
 }
 footer .link_container .bottom_link_holder ul:nth-child(1){
@@ -92,3 +86,49 @@ footer .link_container .bottom_link_holder ul:nth-child(2){
     content: url('/images/light-globe.png');
     margin-right: 5px;
  }
+@media(max-width:1387px){
+   footer .link_container .top_link_holder{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+@media(max-width:1244px){
+    footer .link_container .bottom_link_holder{
+        width: 90vw;
+        flex-direction: column;
+        border: 2px solid white;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@media(max-width:785px){
+    footer .link_container .bottom_link_holder ul:first-child{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:595px){
+    .link_container{
+     margin: 30px;
+    }
+    footer .link_container .top_link_holder{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-bottom: 90px;
+    }
+}
+@media(max-width:404px){
+    footer  .link_container .top_link_holder{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+  footer .link_container  .top_link_holder ul{
+        gap: 0px;
+    }
+    footer .top_link_holder a{
+        padding: 10px;
+    }
+}

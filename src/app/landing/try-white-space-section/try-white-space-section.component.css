@@ -52,3 +52,12 @@
     height: 100%;
     aspect-ratio: 1 / 1;
 }
+@media(max-width:510px){
+    .try_whitespace_wrapper h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    .try_whitespace_wrapper p{
+        text-align: center;
+    }
+}
