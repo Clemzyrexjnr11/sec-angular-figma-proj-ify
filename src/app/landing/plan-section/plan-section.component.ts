@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ViewEncapsulation } from '@angular/core';
 import { CurrencyPipe } from '@angular/common';
 import { PlanCardComponent } from "../plan-card/plan-card.component";
 import { DUMMY_PLANS } from '../../../main';
@@ -7,7 +7,7 @@ import { DUMMY_PLANS } from '../../../main';
   selector: 'app-plan-section',
   imports: [PlanCardComponent],
   templateUrl: './plan-section.component.html',
-  styleUrl: './plan-section.component.css'
+  styleUrl: './plan-section.component.css',
 })
 export class PlanSectionComponent {
    plans = inject(DUMMY_PLANS);

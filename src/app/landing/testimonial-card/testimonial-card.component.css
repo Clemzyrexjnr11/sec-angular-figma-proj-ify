@@ -53,11 +53,3 @@
    font-family: inter;
     font-size: 12px;
 }
- .client:nth-child(2){
-    background: var(--bg-sec-primary);
-    color: white;
-}
- .client:nth-child(3){
-    background: var(--bg-sec-primary);
-    color: white;
-}

@@ -2,51 +2,15 @@
     <div class="testimonials_wrapper">
       <h3>What our client says</h3>
       <div class="testimonials_grid">
-        <!-- <div class="client">
-          <div class="top">
-            <img src="images/dark-Quote.png" alt="">
-            <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
-          </div>
-          <div class="bottom">
-            <img src="images/first-client.png" alt="">
-            <div class="more_info">
-              <h5>Oberon Shaw, MCH</h5>
-              <p>Head of Talent Acquisition, North America</p>
-            </div>
-          </div>
-        </div>
-        <div class="client">
-          <div class="top">
-            <img src="images/dark-Quote.png" alt="">
-            <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
-          </div>
-          <div class="bottom">
-            <img src="images/second-client.png" alt="">
-            <div class="more_info">
-              <h5>Oberon Shaw, MCH</h5>
-              <p>Head of Talent Acquisition, North America</p>
-            </div>
-          </div>
-        </div>
-        <div class="client">
-          <div class="top">
-            <img src="images/dark-Quote.png" alt="">
-            <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
-          </div>
-          <div class="bottom">
-            <img src="images/third-client.png" alt="">
-            <div class="more_info">
-              <h5>Oberon Shaw, MCH</h5>
-              <p>Head of Talent Acquisition, North America</p>
-            </div>
-          </div>
-        </div>
-         -->
-        
-        @for(client of dummyClients; track client.clientId){
-        <app-testimonial-card [introText]="client.introText" [name]="client.clientName" [job]="client.clientJob" [img]="client.clientImg"/>
-           
-        }
+        <app-testimonial-card>
+          <img src="images/first-client.png" alt="">
+        </app-testimonial-card>
+        <app-testimonial-card>
+          <img src="images/second-client.png" alt="">
+        </app-testimonial-card>
+        <app-testimonial-card>
+          <img src="images/third-client.png" alt="">
+        </app-testimonial-card>
       </div>
     </div>
   </section>

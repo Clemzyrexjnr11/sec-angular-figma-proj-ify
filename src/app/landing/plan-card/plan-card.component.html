@@ -1,11 +1,14 @@
 <div class="plan">
-    <p>{{plans()?.type}}</p>
-    <p>{{plans()?.worth | currency : 'USD' }}</p>
-    <p>{{plans()?.plandetail}}</p>
-    <ul>
-    @for(plan of plans()?.planContent; track plan.length){
-      <li>{{plan}}</li>
-    }
-    </ul>
-    <a [href]="plans()?.plan_link">{{plans()?.plan_linkcontent}}</a>
+   <ng-content select="[p, span]"></ng-content>
+   <ng-content select="[p, span]"></ng-content>
+   <ng-content select="[p , span]"></ng-content>
+   <ul>
+    <li>Sync unlimited devices</li>
+    <li>10 GB monthly uploads</li>
+    <li>200 MB max. note size</li>
+    <li>Customize Home dashboard and access extra widgets</li>
+    <li>Connect primary Google Calendar account</li>
+    <li>Add due dates, reminders, and notifications to your tasks</li>
+   </ul>
+   <a href="#">Get Started</a>
   </div>

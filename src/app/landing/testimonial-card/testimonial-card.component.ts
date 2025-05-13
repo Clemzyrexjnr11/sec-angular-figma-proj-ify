@@ -6,12 +6,12 @@ import { DUMMY_CLIENTS } from '../../../main';
   imports: [],
   templateUrl: './testimonial-card.component.html',
   styleUrl: './testimonial-card.component.css',
-  
+  encapsulation:ViewEncapsulation.None
 
 })
 export class TestimonialCardComponent {
-  introText = input<string>('');
-  name = input<string>('');
-  job = input<string>('');
-  img = input<string>('');
+  // introText = input<string>('');
+  // name = input<string>('');
+  // job = input<string>('');
+  // img = input<string>('');
 }

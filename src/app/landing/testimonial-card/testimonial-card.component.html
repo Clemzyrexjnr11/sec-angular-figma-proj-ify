@@ -1,14 +1,17 @@
 <div class="client">
-    <div class="top">
-      <img src="images/dark-Quote.png" alt="">
+  <div class="top">
+    <img src="images/dark-Quote.png" alt="" />
 
-      <p>{{introText()}}</p>
-    </div>
-    <div class="bottom">
-      <img [src]="img()" alt="">
-      <div class="more_info">
-        <h5>{{name()}}</h5>
-        <p>{{job()}}</p>
-      </div>
+    <p>
+      Whitepate is designed as a collaboration tool for businesses that is a
+      full project management solution.
+    </p>
+  </div>
+  <div class="bottom">
+    <ng-content select="img"></ng-content>
+    <div class="more_info">
+      <h5>Oberon Shaw, MCH</h5>
+      <p>Head of Talent Acquisition, North America</p>
     </div>
   </div>
+</div>

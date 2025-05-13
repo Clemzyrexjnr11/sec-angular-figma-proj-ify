@@ -29,3 +29,13 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+::ng-deep app-testimonial-card:nth-child(2){
+    background: var(--bg-sec-primary);
+     color: white;
+     border-radius: 8px;
+}
+::ng-deep app-testimonial-card:nth-child(3){
+    background: var(--bg-sec-primary);
+     color: white;
+     border-radius: 8px;
+}
