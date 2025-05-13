@@ -22,7 +22,7 @@
    font-family: Inter;
    background-image: url('/images/workElement.png');
    background-repeat: no-repeat;
-   background-position: bottom;
+   background-position: 400px 50px;
 
 }
 .your_work_article p{

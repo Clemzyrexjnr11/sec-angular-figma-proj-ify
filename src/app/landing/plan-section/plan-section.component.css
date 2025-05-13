@@ -39,6 +39,7 @@
     margin-bottom: 60px;
     font-size: 18px;
     font-weight: 200;
+    line-height: 30px;
 }
 .plan_grid{
   height: 80%;
@@ -48,4 +49,38 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 32px;
+}
+@media(max-width:1080px){
+    .plan_wrapper{
+        width: 95%;
+    }
+}
+@media(max-width:945px){
+    .plan_wrapper{
+        overflow-x: auto;
+        width: fit-content;
+    }
+     .plan_grid{
+        padding: 0px 20px 0px 20px;
+      
+     }
+    ::ng-deep app-plan-card{
+        width: 350px;
+    } 
+    .plan_header p{
+        padding: 0px 15px;
+    }
+}
+@media(max-width:570px){
+    .plan_header p{
+        font-size: 15px;
+    }
+}
+@media(max-width:450px){
+    .plan_header h1{
+        font-size: 35px;
+        background-position: 150px 20px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+    }
 }

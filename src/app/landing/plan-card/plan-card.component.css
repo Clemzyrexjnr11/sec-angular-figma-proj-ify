@@ -50,6 +50,8 @@
 }
 .plan:hover a{
     color: white;
+    background: var(--bg-sec-primary);
+    border: none;
 }
 .plan:hover p:nth-child(2){
     color: var(--sec-color);
@@ -60,4 +62,5 @@
     color: white;
     height: 80%;
     transition: 0.5s all ease-in-out;
+    
 }

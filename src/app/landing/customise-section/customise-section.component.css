@@ -57,3 +57,56 @@
     content: url('/images/right-arrow.png');
     margin-left: 5px;
 }
+
+@media(max-width:1108px){
+    .customise_wrapper{
+        width: 90%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .customise_needs .bg_customise{
+        width: 80%;
+        height: 100%;
+    }
+    .customise_article{
+        width: 80%;
+        align-items: center;
+    }
+    .customise_article h1{
+     background-position: 300px 10px;
+    }
+}
+@media(max-width:1030px){
+    .customise_article h1{
+        font-size: 45px;
+        background-size: 500px;
+    }
+    .customise_article p{
+        text-align: center;
+    }
+
+}
+@media(max-width:775px){
+    .customise_article h1{
+        font-size: 35px;
+        background-size: 300px;
+    }
+}
+@media(max-width:606px){
+    .customise_article h1{
+        font-size: 25px;
+        background-position: 200px 10px;
+        background-size: 200px;
+    }
+    .customise_article p{
+        font-size: 15px;
+    }
+}
+@media(max-width:442px){
+    .customise_article h1{
+        text-align: center;
+        background-position: 100px 40px;
+    }
+}
