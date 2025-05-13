@@ -1,6 +1,6 @@
 .sponsors{
     height: 538px;
-    width: 100%;
+    width: 100vw;
     /* border: 2px solid red; */
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
 
 }
 .sponsors_wrapper{
-    width: 80%;
+    width: 90%;
     /* height: 100%; */
     /* border: 2px solid black; */
     display: flex;
@@ -45,4 +45,36 @@
 .sponsors_wrapper ul img{
     height: 100%;
     width: 50%;
+    object-fit: contain;
+}
+@media(max-width:1175px){
+    .sponsors{
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:575px){
+    .sponsors{
+        padding-top: 30px;
+    }
+    .sponsors_wrapper{
+        height: 100%;
+        gap: 50px;
+    }
+    .sponsors_wrapper h1{
+        font-size: 35px;
+    }
+    .sponsors_wrapper ul, li{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .sponsors_wrapper ul li img{
+        height: 60px;
+    }
 }

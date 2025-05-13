@@ -77,6 +77,12 @@
         /* border: 2px solid black; */
     }
 }
+@media(max-width:745px){
+    .your_data_wrapper .left p{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
 @media(max-width:564px){
     .your_data_wrapper .left h1{
         font-size: 35px;

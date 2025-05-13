@@ -1,12 +1,10 @@
 .favorite_apps{
     height: 750px;
-    width: 100%;
+    width: 100vw;
     background-color: var(--bg-primary);
     background-image: url('/images/Element.png');
     background-repeat: no-repeat;
     background-size:100%, 620px;
-    /* background-position-x: -60px;
-    background-position-y: 18px; */
     background-position: center;
     display: flex;
     justify-content: center;
@@ -61,4 +59,65 @@
 .favorite_apps_wrapper .right a::after{
     content: url('/images/right-arrow.png');
     margin-left: 5px;
+}
+@media(max-width:1115px){
+    .favorite_apps{
+        padding:100px 0px;
+    }
+    .favorite_apps_wrapper{
+        width: 90%;
+        /* border: 2px solid white; */
+    }
+}
+@media(max-width:1000px){
+    .favorite_apps_wrapper .left img{
+        height: 300px;
+    }
+    .favorite_apps_wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .favorite_apps_wrapper .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* border: 2px solid red; */
+        height: fit-content;
+    }
+    .favorite_apps_wrapper .right{
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+        /* border: 2px solid red; */
+    }
+    .favorite_apps_wrapper .right h2{
+        font-size: 35px;
+    }
+}
+@media(max-width:854px){
+    .favorite_apps{
+        padding: 50px;
+    }
+    .favorite_apps_wrapper .right p{
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:495px){
+    .favorite_apps_wrapper .right p{
+       font-size: 12px;
+    }
+    .favorite_apps_wrapper .right h2{
+        font-size: 20px;
+    }
+}
+@media(max-width:355px){
+    .favorite_apps_wrapper .right p{
+        margin-bottom: 20px;
+    }
+    .favorite_apps_wrapper .right a{
+        padding: 10px;
+    }
 }
