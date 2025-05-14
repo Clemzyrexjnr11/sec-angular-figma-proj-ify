@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './navbar-section.component.css'
 })
 export class NavbarSectionComponent {
+  onAddMenu(){
+   document.querySelector('.aside_nav')?.classList.add('addmenu');
+  }
+  onRemoveMenu(){
+    document.querySelector('.aside_nav')?.classList.remove('addmenu');
 
+  }
 }
